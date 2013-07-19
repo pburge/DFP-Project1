@@ -1,0 +1,180 @@
+body {
+	font-family: 'Economica', helvetica, arial, sans-serif;
+	font-size: 1.188em; /* 18px */
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0%;
+	/*background: top center url("../images/background1.jpg") no-repeat fixed;*/
+	background-color: #003366;
+}
+
+h1 {
+	color: #fff;
+	background: #000;
+	/*width: 66.7777778%; /*601px*/
+	margin: 0% 0%;
+	padding: 0% 0%;
+	height: 52px;
+	text-indent: 25px;
+	line-height: 45px;
+}
+
+#flashContent{
+	padding-left: 5%;
+	padding-right: 5%;
+
+}
+
+.container {
+	background-color: #fff;
+	width: 100%; /*900px*/
+	padding-bottom: 25px;
+	margin: 0px;
+
+}
+
+.summery_img {
+	width: 35.3606789%; /*250px*/
+	height: 400px;
+	padding: 50px 30% 50px;
+}
+
+.summery {
+	font-size: 1.667em;
+	margin: 0px 20px;
+	padding: 90px 30px 0;
+	text-align: center;
+	clear: right;
+}
+
+h2, h3, h4 {
+	clear: left;
+	padding: 40px 40px 0px;
+	text-align: center;
+}
+
+article {
+	text-indent: 20px;
+	margin: 30px 40px;
+
+	text-align: center;
+}
+
+footer {
+	border: 5px solid #000;
+	background: #000;
+	color: #fff;
+	padding: 0px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: 30px;
+/*	position: relative;
+	top: -35px;*/
+}
+
+ol li {
+	margin: 0px 60px;
+}
+
+
+
+
+/*----------------- Start Navigation -----------------------*/
+#navlist {
+	margin: 0% 0%; /* Doesn't look like this was needed, but it is. */
+	padding: 0% 0%;
+}
+
+#navlist li {
+	list-style-type: none; 
+	padding: 0% 0%;
+	margin: 0% auto;
+	overflow: hidden;
+	width: 12.2222222%; /*110px*/
+	float: right;
+	display: inline;
+	position: relative;
+	top: -52px;
+}
+
+#navlist a { 
+	text-decoration: none;
+	background: #000;
+	display: block;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	color: #fff;
+}
+
+#navlist a:hover {
+	color: #000;
+	background: #006699;
+}
+/*------------------ End Navigation -----------------------*/
+
+
+
+/*------------------- Start Gallery -----------------------*/
+
+div.gallery { width: 100%; /*900px;*/ }
+
+.gallery li {
+	list-style-type: none;
+	height: 160px;
+	display: inline;
+	overflow: hidden;
+	float: left;
+	margin: 20px 15.22222222%; /*20px;*/
+	padding-bottom: 10%;
+}
+
+.gallery a {
+	border: 5px solid #000;
+	display: block;
+	height: 94%; /*150px;*/
+}
+
+.gallery img { max-width: 100%; }
+
+.gallery a:link { border-color: #000; }
+
+.gallery a:visited{ border-color: #8f242c; }
+
+.gallery a:hover{ border-color: #cc333f; }
+
+.gallery a:active{ border-color: #cc7433; }
+
+/*------------------- End Gallery -----------------------*/
+
+
+
+/* =Media Queries
+====================================================================*/
+
+	/*Tablet Portrait size to standard 960 (devices and browsers)*/
+	@media screen and (min-width: 768px) and (max-width: 959px) {
+
+		body { background: none; }
+		article { column-count: 1; -webkit-column-count: 1; -moz-column-count: 1; }
+
+	}
+
+	/*Mobile Landscape Size to Tablet Portrait (devices and browsers)*/
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+		body { background: none; }
+		.summery { padding-top: 0px }
+		article { column-count: 1; -webkit-column-count: 1; -moz-column-count: 1; }
+
+	}
+
+	/*Mobile Portrait Size to Mobile Landscape Size (devices and browsers)*/
+	@media only screen and (max-width: 479px) {
+
+		h1 { width: 100%; text-align: center; }
+		.summery_img { display: none; }
+		#navlist li { float: none; position: static; }
+		article { column-count: 1; -webkit-column-count: 1; -moz-column-count: 1; }
+		body { background: none; }
+	}
